@@ -23,7 +23,7 @@ from functools import reduce
 # TODO: Refactor the code:- create train, test, predict functions
 
 def train_model():
-    data = pd.read_csv('data/Train.csv')
+    data = pd.read_csv('data/traffic_data.csv')
     data['is_holiday'] = data['is_holiday'].apply(lambda x: 0 if pd.isna(x) else 1)
 
     data = data.sort_values(
