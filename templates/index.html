@@ -106,7 +106,7 @@ margin:10px;
                 <option value="3">Wednesday</option>
                 <option value="4">Thursday</option>
                 <option value="5">Friday</option>
-                <option value="6">Saturday</option>
+                <option value="6">Saturday</option>                
             </select>
         </div>
         <div>
@@ -119,6 +119,7 @@ margin:10px;
         <div>
             <label><h2>Holiday</h2></label>
             <select name="isholiday" id="isholiday">
+                
                 <option value="1">Yes</option>
                 <option value="0">No</option>
             </select>
@@ -126,7 +127,7 @@ margin:10px;
 
         <div>
             <label><h2>Climate</h2></label>
-            <select name="x0" id="x0" onchange=fun(this)>
+            <select name="climate" id="climate" onchange=fun(this)>
                 <option value="Clear">Clear</option>
                 <option value="Clouds">Clouds</option>
                 <option value="Drizzle">Drizzle</option>
@@ -145,7 +146,7 @@ margin:10px;
     <div class="move">
     <div>
         <label><h2>Weather</h2></label>
-        <select name="x1" id="x1">
+        <select name="weather" id="weather">
             <option value="SQUALLS">SQUALLS</option>
             <option value="Sky is Clear">Sky is Clear</option>
             <option value="broken clouds">broken clouds</option>
@@ -233,8 +234,7 @@ margin:10px;
         var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-        var yyyy = today.getFullYear();
-    
+        var yyyy = today.getFullYear();    
         today = yyyy + '-' + mm + '-' + dd;
         document.getElementById('datePicker').value = today;
     });

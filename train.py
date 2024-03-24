@@ -18,6 +18,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
+from functools import reduce
 
 # TODO: Refactor the code:- create train, test, predict functions
 
@@ -38,38 +39,36 @@ def train_model():
     data['weekday'] = data['date_time'].map(lambda x: x.weekday()+1)
     data['month'] = data['date_time'].map(lambda x: int(x.strftime("%m")))
     data['year'] = data['date_time'].map(lambda x: int(x.strftime("%Y")))
-
-    # data.columns    
-    # plt.rcParams['font.sans-serif'] = ['SimHei']
-    # plt.rcParams['axes.unicode_minus'] = False
+    
     warnings.filterwarnings('ignore')
 
-    data = data.sample(10000).reset_index(drop=True)
+    # data = data.sample(10000).reset_index(drop=True)
     label_columns = ['weather_type', 'weather_description']
     numeric_columns = ['is_holiday', 'temperature',
                         'weekday', 'hour', 'month_day', 'year', 'month']
 
-    features = numeric_columns+label_columns
+    features = numeric_columns + label_columns
     X = data[features]
-
-    from functools import reduce
-    def unique(list1):
-        ans = reduce(lambda re, x: re+[x] if x not in re else re, list1, [])
-        # print(ans)
 
     n1 = data['weather_type']
     n2 = data['weather_description']
+
+    def unique(list1):
+        ans = reduce(lambda re, x: re+[x] if x not in re else re, list1, [])        
+    
     unique(n1)
     unique(n2)
+
     n1features = ['Rain', 'Clouds', 'Clear', 'Snow', 'Mist',
                 'Drizzle', 'Haze', 'Thunderstorm', 'Fog', 'Smoke', 'Squall']
     n2features = ['light rain', 'few clouds', 'Sky is Clear', 'light snow', 'sky is clear', 'mist', 'broken clouds', 'moderate rain', 'drizzle', 'overcast clouds', 'scattered clouds', 'haze', 'proximity thunderstorm', 'light intensity drizzle', 'heavy snow', 'heavy intensity rain', 'fog', 'heavy intensity drizzle', 'shower snow', 'snow', 'thunderstorm with rain',
                 'thunderstorm with heavy rain', 'thunderstorm with light rain', 'proximity thunderstorm with rain', 'thunderstorm with drizzle', 'smoke', 'thunderstorm', 'proximity shower rain', 'very heavy rain', 'proximity thunderstorm with drizzle', 'light rain and snow', 'light intensity shower rain', 'SQUALLS', 'shower drizzle', 'thunderstorm with light drizzle']
 
-    # TODO: Data Preparation: Change it to take the entire dataset 
+    
     n11 = []
     n22 = []
-    for i in range(10000):
+    
+    for i in range(0, data.shape[0]):
         if(n1[i]) not in n1features:
             n11.append(0)
         else:
@@ -104,3 +103,4 @@ def train_model():
     print('Mean Absolute Error:', mean_absolute_error(testY, y_pred))
 
     return x_scaler, y_scaler, regr
+

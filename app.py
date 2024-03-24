@@ -7,7 +7,7 @@ x_scaler, y_scaler, regr = train_model()
 
 @app.route('/')
 def root():
-    return render_template('index.html')
+    return render_template('index.html', field_values = {}  )
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -25,44 +25,45 @@ def predict():
     d['x1'] = request.form.get('x1') # Weather 
 
     
-    xoval = {'x0_Clear', 'x0_Clouds', 'x0_Drizzle', 'x0_Fog', 'x0_Haze',
-             'x0_Mist', 'x0_Rain', 'x0_Smoke', 'x0_Snow', 'x0_Thunderstorm'}
+    # xoval = {'x0_Clear', 'x0_Clouds', 'x0_Drizzle', 'x0_Fog', 'x0_Haze',
+    #          'x0_Mist', 'x0_Rain', 'x0_Smoke', 'x0_Snow', 'x0_Thunderstorm'}
 
-    x1val = {'x1_Sky is Clear',
-             'x1_broken clouds',
-             'x1_drizzle',
-             'x1_few clouds',
-             'x1_fog',
-             'x1_haze',
-             'x1_heavy intensity drizzle',
-             'x1_heavy intensity rain',
-             'x1_heavy snow',
-             'x1_light intensity drizzle',
-             'x1_light intensity shower rain',
-             'x1_light rain',
-             'x1_light rain and snow',
-             'x1_light shower snow',
-             'x1_light snow',
-             'x1_mist',
-             'x1_moderate rain',
-             'x1_overcast clouds',
-             'x1_proximity shower rain',
-             'x1_proximity thunderstorm',
-             'x1_proximity thunderstorm with drizzle',
-             'x1_proximity thunderstorm with rain',
-             'x1_scattered clouds',
-             'x1_shower drizzle',
-             'x1_sky is clear',
-             'x1_sleet',
-             'x1_smoke',
-             'x1_snow',
-             'x1_thunderstorm',
-             'x1_thunderstorm with heavy rain',
-             'x1_thunderstorm with light drizzle',
-             'x1_thunderstorm with light rain',
-             'x1_thunderstorm with rain',
-             'x1_very heavy rain'
-             }
+    # x1val = {'x1_Sky is Clear',
+    #          'x1_broken clouds',
+    #          'x1_drizzle',
+    #          'x1_few clouds',
+    #          'x1_fog',
+    #          'x1_haze',
+    #          'x1_heavy intensity drizzle',
+    #          'x1_heavy intensity rain',
+    #          'x1_heavy snow',
+    #          'x1_light intensity drizzle',
+    #          'x1_light intensity shower rain',
+    #          'x1_light rain',
+    #          'x1_light rain and snow',
+    #          'x1_light shower snow',
+    #          'x1_light snow',
+    #          'x1_mist',
+    #          'x1_moderate rain',
+    #          'x1_overcast clouds',
+    #          'x1_proximity shower rain',
+    #          'x1_proximity thunderstorm',
+    #          'x1_proximity thunderstorm with drizzle',
+    #          'x1_proximity thunderstorm with rain',
+    #          'x1_scattered clouds',
+    #          'x1_shower drizzle',
+    #          'x1_sky is clear',
+    #          'x1_sleet',
+    #          'x1_smoke',
+    #          'x1_snow',
+    #          'x1_thunderstorm',
+    #          'x1_thunderstorm with heavy rain',
+    #          'x1_thunderstorm with light drizzle',
+    #          'x1_thunderstorm with light rain',
+    #          'x1_thunderstorm with rain',
+    #          'x1_very heavy rain'
+    #          }
+    
     # print(xoval)
     # x0 = {}
     # x1 = {}
@@ -87,15 +88,13 @@ def predict():
     final.append(d['year'])
     final.append(d['month'])
     final.append(d['x0'])
-    final.append(d['x1'])
-    
+    final.append(d['x1'])    
 
     # for i in x0:
     #     final.append(x0[i])
     # for i in x1:
     #     final.append(x1[i])
-    print(f"d is = {d}")    
-    
+        
     input_values = x_scaler.transform([final])
     out=regr.predict(input_values)
     print(f'Before inverse Scaling : {out}')
@@ -111,7 +110,8 @@ def predict():
     elif y_pred>3000 and y_pred<=5500:
         prediction = "High Congestion"        
     else:
-        prediction = "Severe Delays"    
+        prediction = "Severe Delays" 
+
     return render_template('output.html', prediction=prediction)
     
 
