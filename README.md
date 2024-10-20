@@ -13,6 +13,7 @@ A deep learning-based traffic prediction model developed using MLPRegressor. Thi
 Before you begin, ensure you have the following:
 
 Python 3.x (preferably the latest stable version)
+
 Git for version control
 
 ## Installation
