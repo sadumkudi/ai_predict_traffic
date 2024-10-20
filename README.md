@@ -16,9 +16,15 @@ This model is developed based on MLPRegressor
 
    python -m venv myvenv 
 7. activate the virtual environment by running:
-   
     myvenv\Scripts\activate (On Windows)  
     source myenv/bin/activate (On Linux)
+9. test
+10. test
+11. test
+   
+    
+
+   
 
 
 
