@@ -18,6 +18,7 @@ Git for version control
 1.   Clone the repository:
 
     Open a terminal and run:   
+
     
 
     git clone https://github.com/sadumkudi/ai_predict_traffic.git
