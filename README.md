@@ -38,6 +38,7 @@ Git for version control
 
 
 4.   Install the required dependencies:
+   
     Run the following command to install the necessary Python modules:
 
     pip install -r requirements.txt
