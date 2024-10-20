@@ -30,10 +30,8 @@ Git for version control
     On Windows:    
     myvenv\Scripts\activate
 
-    On Linux/macOS:
-    
+    On Linux/macOS:    
     source myvenv/bin/activate
-
 
 4.   Install the required dependencies:
    
