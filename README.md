@@ -1,10 +1,8 @@
 # Traffic_Prediction
 
-Traffic Prediction using deep Learning
+Traffic Prediction using deep Learning. This model is developed based on MLPRegressor
 
-This model is developed based on MLPRegressor
 
-- 
 # Steps to set up and run the application
 
 1. Install Python 3.x version (Preferrably latest stable version)
