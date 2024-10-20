@@ -23,16 +23,20 @@ Git for version control
     git clone https://github.com/sadumkudi/ai_predict_traffic.git
 
     cd ai_predict_traffic
-3.   Create a Python virtual environment:
+2.   Create a Python virtual environment:
    
     python -m venv myvenv
 
-5.   Activate the virtual environment:
+3.   Activate the virtual environment:
     On Windows:
 myvenv\Scripts\activate
 
+    On Linux/macOS:
+    
+source myvenv/bin/activate
 
-7.   Install the required dependencies:
+
+5.   Install the required dependencies:
     Run the following command to install the necessary Python modules:
     pip install -r requirements.txt
 
