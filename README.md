@@ -18,12 +18,21 @@ Git for version control
 
 ## Installation
 1.   Clone the repository:
+    Open a terminal and run:
 
-Open a terminal and run:
+    git clone https://github.com/sadumkudi/ai_predict_traffic.git
 
-git clone https://github.com/sadumkudi/ai_predict_traffic.git
+    cd ai_predict_traffic
+3.   Create a Python virtual environment:
+4.   Activate the virtual environment:
+5.   Install the required dependencies:
+    Run the following command to install the necessary Python modules:
+    pip install -r requirements.txt
 
-cd ai_predict_traffic
+
+
+
+
 
 
 
