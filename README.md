@@ -41,4 +41,6 @@ Git for version control
 
 ## Running the Application
 Once the environment is set up and the dependencies are installed, run the following command to start the application:
+python app.py
+
 
