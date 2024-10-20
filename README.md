@@ -20,8 +20,8 @@ Traffic Prediction using deep Learning. This model is developed based on MLPRegr
 9. Install the required modules
 
     pip3 install -r requirements.txt
-12. test
-13. test
+12. run "python app.py"
+
    
     
 
