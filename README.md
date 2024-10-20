@@ -13,7 +13,8 @@ This model is developed based on MLPRegressor
    
      git clone https://github.com/sadumkudi/ai_predict_traffic.git
 5. create a python virtual environment:
-    python -m venv venv 
+
+   python -m venv venv 
 7. 
 
 
