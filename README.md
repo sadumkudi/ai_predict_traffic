@@ -7,9 +7,9 @@ Traffic Prediction using deep Learning. This model is developed based on MLPRegr
 
 1. Install Python 3.x version (Preferrably latest stable version)
 2. Make sure Git is installed on your system
-3. Git clone the repo: execute the below command
+3. Git clone the repo. Execute the below command
    
-     git clone https://github.com/sadumkudi/ai_predict_traffic.git
+    git clone https://github.com/sadumkudi/ai_predict_traffic.git
 5. create a python virtual environment:
 
    python -m venv myvenv 
