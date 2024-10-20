@@ -1,6 +1,6 @@
 # Traffic Prediction
 
-A deep learning-based traffic prediction model developed using MLPRegressor. This project aims to predict traffic patterns based on various input features, leveraging machine learning techniques for accurate predictions.
+This project implements a traffic prediction model using a neural network, model developed using MLPRegressor. This project aims to predict traffic patterns based on various input features, leveraging machine learning techniques for accurate predictions.
 
 
 ## Prerequisites
