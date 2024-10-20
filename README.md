@@ -1,9 +1,30 @@
-# Traffic_Prediction
+# Traffic Prediction
 
-Traffic Prediction using deep Learning. This model is developed based on MLPRegressor
+A deep learning-based traffic prediction model developed using MLPRegressor. This project aims to predict traffic patterns based on various input features, leveraging machine learning techniques for accurate predictions.
+
+## Table of Contents
+1. Prerequisites
+2. Installation
+3. Running the Application
+4. 
 
 
-# Steps to set up and run the application
+## Prerequisites
+Before you begin, ensure you have the following:
+
+Python 3.x (preferably the latest stable version)
+Git for version control
+
+## Installation
+Clone the repository:
+
+Open a terminal and run:
+git clone https://github.com/sadumkudi/ai_predict_traffic.git
+cd ai_predict_traffic
+
+
+
+
 
 1. Install Python 3.x version (Preferrably the latest stable version)
 2. Make sure Git is installed on your system
