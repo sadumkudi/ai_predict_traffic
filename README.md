@@ -27,8 +27,7 @@ Git for version control
 
 3.   Activate the virtual environment:
 
-    On Windows:
-    
+    On Windows:    
     myvenv\Scripts\activate
 
     On Linux/macOS:
