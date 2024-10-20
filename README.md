@@ -10,10 +10,10 @@ Traffic Prediction using deep Learning. This model is developed based on MLPRegr
 3. Git clone the repo. Execute the below command
    
     git clone https://github.com/sadumkudi/ai_predict_traffic.git
-5. create a python virtual environment:
+5. Create a python virtual environment:
 
    python -m venv myvenv 
-7. activate the virtual environment by running:
+7. Activate the virtual environment by running:
    
     myvenv\Scripts\activate (On Windows)  
     source myenv/bin/activate (On Linux)
