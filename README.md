@@ -10,6 +10,7 @@ This model is developed based on MLPRegressor
 1. Install Python 3.x version (Preferrably latest stable version)
 2. Make sure Git is installed on your system
 3. Git clone the repo: execute the below command
+   
  git clone https://github.com/sadumkudi/ai_predict_traffic.git
 5. 
 6. 
