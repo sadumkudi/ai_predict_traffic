@@ -5,7 +5,7 @@ Traffic Prediction using deep Learning. This model is developed based on MLPRegr
 
 # Steps to set up and run the application
 
-1. Install Python 3.x version (Preferrably latest stable version)
+1. Install Python 3.x version (Preferrably the latest stable version)
 2. Make sure Git is installed on your system
 3. Git clone the repo. Execute the below command
    
