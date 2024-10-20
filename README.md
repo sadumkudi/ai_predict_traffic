@@ -28,7 +28,11 @@ Git for version control
     python -m venv myvenv
 
 5.   Activate the virtual environment:
-6.   Install the required dependencies:
+    On Windows:
+myvenv\Scripts\activate
+
+
+7.   Install the required dependencies:
     Run the following command to install the necessary Python modules:
     pip install -r requirements.txt
 
