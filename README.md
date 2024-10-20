@@ -6,8 +6,7 @@ A deep learning-based traffic prediction model developed using MLPRegressor. Thi
 1. Prerequisites
 2. Installation
 3. Running the Application
-4. 
-
+   
 
 ## Prerequisites
 Before you begin, ensure you have the following:
@@ -18,14 +17,18 @@ Git for version control
 
 ## Installation
 1.   Clone the repository:
+   
     Open a terminal and run:
 
     git clone https://github.com/sadumkudi/ai_predict_traffic.git
 
     cd ai_predict_traffic
 3.   Create a Python virtual environment:
-4.   Activate the virtual environment:
-5.   Install the required dependencies:
+   
+    python -m venv myvenv
+
+5.   Activate the virtual environment:
+6.   Install the required dependencies:
     Run the following command to install the necessary Python modules:
     pip install -r requirements.txt
 
