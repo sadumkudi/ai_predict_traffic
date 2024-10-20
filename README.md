@@ -27,12 +27,14 @@ Git for version control
     python -m venv myvenv
 
 3.   Activate the virtual environment:
+
     On Windows:
-myvenv\Scripts\activate
+    
+    myvenv\Scripts\activate
 
     On Linux/macOS:
     
-source myvenv/bin/activate
+    source myvenv/bin/activate
 
 
 4.   Install the required dependencies:
