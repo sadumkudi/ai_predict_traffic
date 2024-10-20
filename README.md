@@ -39,5 +39,6 @@ Git for version control
 
     pip install -r requirements.txt
 
-
+## Running the Application
+Once the environment is set up and the dependencies are installed, run the following command to start the application:
 
