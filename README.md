@@ -17,7 +17,7 @@ Traffic Prediction using deep Learning. This model is developed based on MLPRegr
    
     myvenv\Scripts\activate (On Windows)  
     source myenv/bin/activate (On Linux)
-9. Install the required module:
+9. Install the required modules
 
     pip3 install -r requirements.txt
 12. test
