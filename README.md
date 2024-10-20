@@ -17,6 +17,7 @@ Python 3.x (preferably the latest stable version)
 Git for version control
 
 ## Installation
+1.   Clone the repository:
 
 Open a terminal and run:
 
